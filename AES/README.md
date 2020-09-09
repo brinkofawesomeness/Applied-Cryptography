@@ -1,7 +1,7 @@
 # AES Implementation
 
 ### Compiling
-Simply type `make`, and the Makefile should handle everything. This program uses C++11, so if there are any issues, make sure that your machine has a C++11 compiler. It has been tested and works on the Min Kao Hydra machines.
+Simply type `make`, and the Makefile should handle everything. This program uses C++11, so if there are any issues, make sure that your machine has a C++11 compiler.
 
 ### Running
 ```
