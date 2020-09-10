@@ -225,7 +225,7 @@ class AESWorker {
             aes.AddRoundKey(aes.Nr);
             if (verbose) {
                 std::cout << "round[" << std::setfill(' ') << std::setw(2) << std::dec << aes.Nr << "].k_sch      ";
-                printKey(aes, 10);
+                printKey(aes, aes.Nr);
                 std::cout << "round[" << std::setfill(' ') << std::setw(2) << std::dec << aes.Nr << "].output     ";
                 printState(aes);
             }
@@ -238,7 +238,7 @@ class AESWorker {
                 std::cout << "round[ 0].iinput     ";
                 printState(aes);
                 std::cout << "round[ 0].ik_sch     ";
-                printKey(aes, 0);
+                printKey(aes, aes.Nr);
             }
             aes.AddRoundKey(aes.Nr);
 
@@ -291,7 +291,7 @@ class AESWorker {
             aes.AddRoundKey(0);
             if (verbose) {
                 std::cout << "round[" << std::setfill(' ') << std::setw(2) << std::dec << aes.Nr << "].ik_sch     ";
-                printKey(aes, 10);
+                printKey(aes, 0);
                 std::cout << "round[" << std::setfill(' ') << std::setw(2) << std::dec << aes.Nr << "].ioutput    ";
                 printState(aes);
             }
